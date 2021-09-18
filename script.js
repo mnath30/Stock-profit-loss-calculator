@@ -34,9 +34,9 @@ function calculateProfitAndLoss(initialvalue,qty,currentvalue){
 }
 
 function submitHandler(){
-    var initialvalue=Number(initialPrice.value);
-    var qty=Number(quantity.value);
-    var currentvalue=Number(currentPrice.value);
+    var initialvalue=Number(initialPrice.value).toFixed(2);
+    var qty=Math.floor(Number(quantity.value));
+    var currentvalue=Number(currentPrice.value).toFixed(2);
     calculateProfitAndLoss(initialvalue,qty,currentvalue);
 }
 
