@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Profit/Loss Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>Calculate the Profit or Loss on your Stocks</header>
     <div class="main">
-        <h3>Enter the Initial Price of Stock</h3>
-        <input type="number" placeholder="Initial Price" id="initial-price" class="inputbox">
-        <h3>Enter the Quantity purchased</h3>
-        <input type="number" placeholder="Quantity" id="quantity" class="inputbox">
-        <h3>Enter the Current Price of Stock</h3>
-        <input type="number" placeholder="Current price" id="current-price" class="inputbox">
+        <label for="initial-price">Enter the Initial Price of Stock
+        <input type="number" placeholder="Initial Price" id="initial-price" class="inputbox"></label>
+        <label for="quantity">Enter the Quantity purchased
+        <input type="number" placeholder="Quantity" id="quantity" class="inputbox"></label>
+        <label for="current-price">Enter the Current Price of Stock
+        <input type="number" placeholder="Current price" id="current-price" class="inputbox"></label>
         <button id="btn" class="button">Calculate</button>
         <div id="result" class="display-result">Keep an eye here to know your profit or loss</div>
     </div>
+    <footer>
+        <p>&copy; Maitreyee Nath</p>
+        <ul>
+            <li class="social-icon"><a href="https://twitter.com/maitreyee__nath" target="__blank"><i class="fa fa-twitter"></i></a></li>
+            <li class="social-icon"><a href="https://github.com/mnath30" target="__blank"><i class="fa fa-github"></i></a></li>
+            <li class="social-icon"><a href="https://www.linkedin.com/in/maitreyee-nath-211096127?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZcCecq5VS%2BKX4%2FTk0FLFKw%3D%3D" target="__blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

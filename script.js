@@ -22,13 +22,15 @@ function calculateProfitAndLoss(initialvalue,qty,currentvalue){
         difference=initialvalue-currentvalue;
         percentage=calculatePercentage(difference,initialvalue);
         difference=difference*qty;
-        result.innerHTML=`Sorry its a loss. Loss value is: ${difference} and loss precentage is: ${percentage} % 😢`;
+        result.innerHTML=`Sorry its a loss. 
+        Loss value is: ${difference} and loss precentage is: ${percentage} % 😢`;
     }
     else{
         difference=currentvalue-initialvalue;
         percentage=calculatePercentage(difference,initialvalue);
         difference=difference*qty;
-        result.innerHTML=`Yay its a profit. Profit value is: ${difference} and profit percentage is: ${percentage} % 😄`;
+        result.innerHTML=`Yay its a profit. 
+        Profit value is: ${difference} and profit percentage is: ${percentage} % 😄`;
     }
 
 }
