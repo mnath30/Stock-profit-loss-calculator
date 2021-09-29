@@ -18,6 +18,7 @@ header{
     font-size: 2.5rem;
     padding:0.8rem 0 1.5rem 0;
     background-color: var(--light-green);
+    width: 100%;
 }
 .main{
     min-height:80vh;
@@ -35,6 +36,7 @@ a{
 }
 .inputbox{
     display: block;
+    width: 90%;
     margin: 0.5rem auto;
     border:2px solid var(--medium-green);
     padding: 0.5rem;
