@@ -14,9 +14,11 @@ function calculateProfitAndLoss(initialvalue,qty,currentvalue){
     var percentage;
     if (((initialvalue<=0) || (currentvalue<=0)) || (qty<=0)){
         result.innerHTML="The values entered should be more than 0";
+        document.querySelector(".background").style.backgroundColor="#FFFFFF";
     }
     else if (initialvalue==currentvalue){
         result.innerHTML=`Hey its neither a profit not a loss 🙂 `;
+        document.querySelector(".background").style.backgroundColor="#FFFFFF";
     }
     else if (initialvalue>currentvalue){
         difference=initialvalue-currentvalue;
@@ -24,6 +26,7 @@ function calculateProfitAndLoss(initialvalue,qty,currentvalue){
         difference=difference*qty;
         result.innerHTML=`Sorry its a loss. 
         Loss value is: ${difference} and loss precentage is: ${percentage} % 😢`;
+        document.querySelector(".background").style.backgroundColor="#ECFDF5";
     }
     else{
         difference=currentvalue-initialvalue;
@@ -31,6 +34,7 @@ function calculateProfitAndLoss(initialvalue,qty,currentvalue){
         difference=difference*qty;
         result.innerHTML=`Yay its a profit. 
         Profit value is: ${difference} and profit percentage is: ${percentage} % 😄`;
+        document.querySelector(".background").style.backgroundColor="#A7F3D0";
     }
 
 }
